@@ -46,13 +46,18 @@ app.use((req, res, next) => {
     next();
 });
 
-/*
+
 //rutas
+
 app.use('/api', user_routes);
+app.use('/api',publication_routes);
+
+/*
+
 
 app.use('/api', follow_routes);
 
-app.use('/api',publication_routes);
+
 
 app.use('/api', message_routes);
 */
