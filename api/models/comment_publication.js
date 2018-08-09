@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var CommentSchema = Schema ({
+var CommentPublicationSchema = Schema ({
     text: String,
     created_at: String,
     publication: { type: Schema.ObjectId, ref: 'Publication'},
@@ -12,4 +12,4 @@ var CommentSchema = Schema ({
     
 });
 
-module.exports = mongoose.model ('Comment', CommentSchema);
+module.exports = mongoose.model ('CommentPublication', CommentPublicationSchema);

@@ -12,12 +12,22 @@ var app = express();
 
 //Cargar rutas
 
-/*
-var user_routes = require('./routes/user');
+var blocked_routes = require('./routes/blocked');
+var comment_publication_routes = require('./routes/comment_publication');
+var comment_shop_location = require('./routes/comment_shop_location');
 var follow_routes = require('./routes/follow');
+var like_comment_publication_routes = require ('./routes/like_comment_publication');
+var like_publication_routes = require ('./routes/like_publication');
+var like_shop_location_routes = require('./routes/like_shop_location');
 var publication_routes = require('./routes/publication');
-var message_routes = require('./routes/message');
-*/
+var shop_location_routes = require('./routes/shop_location');
+var type_publication_routes = require('./routes/type_publication');
+var user_routes = require('./routes/user');
+
+
+//var message_routes = require('./routes/message');
+
+
 
 //Cargar middlewares
 
