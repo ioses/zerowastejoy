@@ -25,8 +25,6 @@ var type_publication_routes = require('./routes/type_publication');
 var user_routes = require('./routes/user');
 
 
-//var message_routes = require('./routes/message');
-
 
 
 //Cargar middlewares
