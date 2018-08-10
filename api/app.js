@@ -53,6 +53,8 @@ app.use('/api', user_routes);
 app.use('/api',publication_routes);
 app.use('/api', follow_routes);
 
+app.use('/api', like_publication_routes);
+
 /*
 
 
