@@ -57,7 +57,7 @@ function getLikesPublication(req,res){
     likesPublication(publicationId).then((value)=>{
         return res.status(200).send({
             publicationId,
-            positiveLikesPublicaion: value.positiveLikesPublication,
+            positiveLikesPublication: value.positiveLikesPublication,
             negativeLikesPublication: value.negativeLikesPublication
         });
     });
@@ -84,7 +84,7 @@ async function likesPublication(publication_id){
 
         return {
             positiveLikesPublication: positiveLikesPublication,
-            negativeLikesPublication: negativeLikes
+            negativeLikesPublication: negativeLikesPublication
         }
 
 

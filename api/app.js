@@ -52,18 +52,10 @@ app.use((req, res, next) => {
 app.use('/api', user_routes);
 app.use('/api',publication_routes);
 app.use('/api', follow_routes);
-
 app.use('/api', like_publication_routes);
-
-/*
-
+app.use('/api', like_shop_location_routes);
 
 
-
-
-
-app.use('/api', message_routes);
-*/
 
 //Exportar
 //Exporta la configuracion
