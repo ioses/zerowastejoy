@@ -56,6 +56,7 @@ app.use('/api', like_publication_routes);
 app.use('/api', like_shop_location_routes);
 app.use('/api', like_comment_publication_routes);
 app.use('/api', comment_publication_routes);
+app.use('/api', comment_shop_location);
 
 
 

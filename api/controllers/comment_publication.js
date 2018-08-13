@@ -42,7 +42,7 @@ function getCommentsPublication(req,res){
     var publication = req.params.publication;
     var itemsPerPage = 4;
 
-    Comment.find({publication: publication}).sort('created-at').populate('user').populate('story')
+    CommentPublication.find({publication: publication}).sort('created-at').populate('user').populate('publication')
     .paginate(page, itemsPerPage, (err, comments, total)=>{
         if(err) return res.status(500).send({message: 'Error al devolver comentarios'});    
         
