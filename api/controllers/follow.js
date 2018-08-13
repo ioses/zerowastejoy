@@ -15,7 +15,8 @@ function saveFollow(req,res){
 	//Lo coge de la decodificacion del middleware
 	follow.user = req.user.sub;
 	//La info que se pasa por POST
-	follow.followed = params.followed;
+	follow.sigue_a = params.sigue_a;
+	follow.created_at = moment().unix();
 
 	follow.save((err,followStored)=>{
 		if(err) return res.status(500).send({message: 'Error al guardar el seguimiento'});
