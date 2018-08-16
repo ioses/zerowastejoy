@@ -5,7 +5,9 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var ShopLocationSchema = Schema({
-	name: String,
+    name: String,
+    password: String,
+    text: String,
 	telephone: String,
     email: String,
     address: String,
